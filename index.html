@@ -49,9 +49,9 @@
     <link rel="stylesheet" type="text/css" href="css/theme.css">
 
     <link rel="canonical" href="http://www.guidofrascadore.it/">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!--jquery-->
-</head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script></head>
 <body>
+<div class="preloader"></div>
 <div class=container>
     <div class="row">
         <div class="col-11 offset-sm-1 offset-0">
@@ -67,14 +67,14 @@
     <div class="row">
         <div class="col-12">
             <div class="title">
-                <h1>Imprenditore italiano, fondatore di startup in ambito fintech ed ecommerce e <span class="underlined">irriducibile ottimista.</span></h1>
+                <h1 class="hidden">Imprenditore italiano, fondatore di startup in ambito fintech ed ecommerce e <span id="type" class="underlined">irriducibile ottimista.</span></h1>
             </div>
         </div>
     </div>
 
     <section class="profile">
         <div class="row">
-            <div class="col-sm-4 offset-sm-1">
+            <div class="col-sm-4 offset-sm-1 hidden">
                 <p>Lavora all'intersezione tra Product Design, Engineering e Digital Strategy con grande attenzione per i dettagli. Inspirato dalla filosofia Kaizen e inebriato dai complessi meccanismi della rete e da quella sensazione di libertà e di sfida continua che offrono.</p>
                 <p>Con il coraggioso obiettivo di creare prodotti e aziende che permettano le persone di sentirsi ispirate e soddisfatte a fine giornata.</p>
             </div>
@@ -89,16 +89,16 @@
     <section class="hype">
         <div class="row">
             <div class="col-sm-7">
-                <h1>Co-Fondatore e Design Mentor in <span class="underlined">HYPE</span></h1>
+                <h1 class="hidden">Co-Fondatore e Design Mentor in <span id="type" class="underlined">HYPE</span></h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 col-12 offset-sm-1">
+            <div class="col-sm-4 col-12 offset-sm-1 hidden">
                 <p>HYPE rivoluziona la gestione del denaro con una carta-conto ricaricabile connessa ad un’app.
                     Ti aiuta a tenere tutte le tue spese sotto controllo, e soprattutto a raggiungere i tuoi obiettivi.
                     Puoi effettuare pagamenti e scambiare denaro con altre persone.</p>
                 <div class="details">
-                    <h4>2015</h4>
+                    <h4>2005</h4>
                     <h4><a rel="noopener" aria-label="hype official site" target="_blank" href="https://www.hype.it/">www.hype.it</a></h4>
                 </div>
             </div>
@@ -107,16 +107,14 @@
     <section class="bemind">
         <div class="row">
             <div class="col-sm-6 offset-sm-5">
-                <h1>Fondatore e Chairman di <span class="underlined">Bemind</span></h1>
+                <h1 class="hidden">Fondatore e Chairman di <span id="type" class="underlined">Bemind</span></h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 col-12 offset-sm-6">
-                <p>Bemind Interactive è un product design studio che trasforma brillanti idee in prodotti ambiziosi.</p>
-<p>Dal 2009, l’azienda collabora con startup e aziende consolidate fornendo loro l’adeguato supporto per immettersi nel mercato incrementando il loro business e aprendosi a nuovi mercati. Il tutto fornendo al cliente un servizio a 360 gradi, dal product design, prototyping e branding allo sviluppo combinandoli in un’unica soluzione per ottenere una brand experience che possa significare un rilevante cambiamento per il settore e per le necessità del cliente
-</p>
+            <div class="col-sm-4 col-12 offset-sm-6 hidden">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo illi intellegunt quid Epicurus dicat, ego non intellego? His similes sunt omnes, qui virtuti.</p>
                 <div class="details">
-                    <h4>2009</h4>
+                    <h4>2005</h4>
                     <h4><a rel="noopener" aria-label="bemind official site" target="_blank" href="https://www.bemind.me/">www.bemind.me</a></h4>
                 </div>
             </div>
@@ -125,11 +123,11 @@
     <section class="bemind">
         <div class="row">
             <div class="col-sm-7">
-                <h1>Fondatore e CEO di <span class="underlined">Vidra</span></h1>
+                <h1 class="hidden">Fondatore e CEO di <span id="type" class="underlined">Vidra</span></h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4 col-12 offset-sm-1">
+            <div class="col-sm-4 col-12 offset-sm-1 hidden">
                 <p>Vidra è una piattaforma che offre la possibilità  a piccole e grandi aziende di accedere al mondo del commercio digitale, 
                     mettendo a disposizione del venditore degli strumenti che consentono di gestire i canali di vendita 
                     (sito, app, marketplace come amazon, ebay, manomano e tanti altri e social) tramite un unico punto di accesso, 
@@ -143,9 +141,9 @@
     </section>
     <section class="about">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 ">
                 <div class="title">
-                    <h1><span class="underlined">Specializzato in </span>fintech, ecommerce, startup, product design, digital strategies, design thinking.</h1>
+                    <h1 class="hidden"><span id="type" class="underlined">Specializzato in </span>fintech, ecommerce, startup, product design, digital strategies, design thinking.</h1>
                 </div>
             </div>
             <div class="col-sm-4 order-sm-1 order-2 offset-sm-1">
@@ -153,7 +151,7 @@
                     <img draggable="false" alt="Guido frascadore at sios" src="img/guido_sios.jpg"/>
                 </div>
             </div>
-            <div class="col-sm-4 order-sm-2 order-1  offset-sm-1">
+            <div class="col-sm-4 order-sm-2 order-1  offset-sm-1 hidden">
                 <p>Per progetti o collaborazioni puoi raggiungermi all’indirizzo <span class="link" ><a href="mailto:guido@bemind.me">guido@bemind.me</a></span> oppure al numero <span class="link" ><a  href="#">+39 339 6239674.</a></span></p>
             </div>
         </div>
@@ -162,7 +160,7 @@
         <div class="row">
             <div class="offset-sm-6 col-sm-6">
                 <div class="title">
-                    <h4>© Copyright 2019</h1>
+                    <h4>© Copyright 2019</h4>
                 </div>
             </div>
         </div>
@@ -170,10 +168,60 @@
 </div>
 
 <!--bootstrap-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+<script>
+    new TypeIt('#type', {
+    strings: '',
+    speed: 50,
+    cursor: false,
+    waitUntilVisible: true
+    }).go();
+</script>
+
+
+<script>//loader timeout
+        document.addEventListener("DOMContentLoaded", function(){
+            $('.preloader').delay(5).fadeOut('slow');
+            
+            $('.preloader')
+                .delay(5)
+                .fadeOut();
+        });
+    </script>
+<script type="text/javascript">
+        var animateHTML = function() {
+            var elems;
+            var windowHeight;
+            function init() {
+              elems = document.querySelectorAll('.hidden');
+              windowHeight = window.innerHeight;
+              addEventHandlers();
+              checkPosition();
+            }
+            function addEventHandlers() {
+              window.addEventListener('scroll', checkPosition);
+              window.addEventListener('resize', init);
+            }
+            function checkPosition() {
+              for (var i = 0; i < elems.length; i++) {
+                var positionFromTop = elems[i].getBoundingClientRect().top;
+                if (positionFromTop - windowHeight <= 0) {
+                  elems[i].className = elems[i].className.replace(
+                    'hidden',
+                    'fade-in-element'
+                  );
+                }
+              }
+            }
+            return {
+              init: init
+            };
+          };
+          animateHTML().init();
+</script>
 <!--jsonld-->
 <script type="application/ld+json">
 {
