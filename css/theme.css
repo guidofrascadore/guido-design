@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'gt_americaexpanded_medium';
+    src: url('../fonts/gt-america-expanded-medium.ttf') format('ttf'),
+         url('../fonts/gt-america-expanded-medium.woff') format('woff'),
+         url('../fonts/gt-america-expanded-medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'galaxiecopernicus';
+    src: url('../fonts/GalaxieCopernicus-Book.eot');
+    src: url('../fonts/GalaxieCopernicus-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GalaxieCopernicus-Book.woff') format('woff'),
+         url('../fonts/GalaxieCopernicus-Book.ttf')  format('truetype'),
+         url('../fonts/GalaxieCopernicus-Book.svg#e38a3208d0813a382ab28eed4449d484') format('svg');       
+    font-style:   normal;
+    font-weight:  400;
+}
+
+a{text-decoration: none; color:inherit;}
+a:hover{ text-decoration: none; color:inherit;}
+
+
+*, *::before, *::after{
+    text-shadow:0 0 0 #00000000, 0 0 1px transparent;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    font-kerning: auto;
+    }
+    
+body{
+    color:#fff;
+    background:#181818;
+    margin: 0;
+    font-family: 'galaxiecopernicus'
+}
+
+p{
+    font-size: 1.3125rem;	
+    font-weight: 300;	
+    line-height: 2.25rem;
+    margin:0;
+    margin-bottom:2.5rem;
+}
+
+h1{
+    font-family: 'gt_americaexpanded_medium';
+    font-size:4rem;
+    letter-spacing: 2px;	
+    line-height: 80px;
+    margin:0;
+    margin-bottom:6rem;
+}
+
+h3{
+    font-family: 'gt_americaexpanded_medium';
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin:0;	
+    line-height: 20px;
+}
+
+h4{
+    font-family: 'gt_americaexpanded_medium';
+    font-size: .875rem;
+    letter-spacing: 2px;	
+    line-height: 20px;
+    margin:0;
+}
+
+@media (max-width: 1199px){
+    h1{
+        font-size: calc(4vw + 1rem);
+        line-height: calc(4vw + 2rem);
+    }
+    h3{
+        font-size: calc(1vw + 1rem);
+    }
+    h4{
+
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+
+.underlined{
+    box-shadow:inset 0 -2px #fff;
+}
+
+.nome{
+    margin:7.5rem 0;
+}
+
+.jobtitle{
+    display: grid;
+    margin-top: 1.25rem;
+    grid-template-columns: max-content auto;
+}
+.jobtitle p{
+    margin:0;
+}
+.horizontal-line{    
+    width: 4rem;
+    height: 1px;
+    background: #fff;
+    margin: auto;
+    margin-right: 1rem;
+}
+
+section{
+    margin-bottom: 12.5rem;
+}
+
+section.profile .profile__picture{
+    margin-top: 8rem;
+}
+.profile__picture img{
+    width:100%;
+}
+
+section.about .profile__picture{
+    margin-top: 5rem;
+}
+section.copyright{
+    margin: 5rem 0;
+}
+.details{
+    display: grid;
+    grid-template: 3.25rem / 50%;
+}
+.details h4{
+    line-height: 3.25rem;
+    border-top: 1px solid #fff;
+}
+.details h4:last-of-type{
+    border-bottom: 1px solid #fff;
+}
+
+.link{
+    display: inline-block;
+}
+.link a::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: #fff;
+    transition: all .2s ease-out;
+}
+.link:hover a::after{
+    transform:translateY(-200%);
+    transition: all .2s ease-out;
+}
+
+@media (min-width: 576px){
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto{
+        padding:0!important;
+    }   
+}
+@media (max-width: 575px){
+    .nome {
+        margin: 4rem 0;
+    }
+    section.profile .profile__picture {
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px!important;
+    }
+}
